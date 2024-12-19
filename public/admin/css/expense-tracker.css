@@ -1,0 +1,208 @@
+/* Global body styling */
+.expense-tracker-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d5e4ff, #f3e6ff);
+}
+
+/* Container with centered content */
+.expense-container {
+  width: 80%; /* Adjusted width */
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 2px solid #b0aaff;
+  overflow-x: auto; /* Allow horizontal scrolling for very small screens */
+}
+
+/* Title styling */
+.expense-heading {
+  text-align: center;
+  font-size: 2em;
+  color: #6d5eff;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Input section styling */
+.expense-input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Label styling inside input section */
+.expense-input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Input fields for number and date */
+.expense-input-section input[type="number"],
+.expense-input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Button inside input section */
+.expense-input-section button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Expenses list styling */
+.expense-list {
+  margin: 20px;
+}
+
+/* Table styling */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header and cell styling */
+.expense-table th,
+.expense-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table header specific style */
+.expense-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Footer styling for total */
+.expense-table tfoot td {
+  font-weight: bold;
+}
+
+/* Delete button styling */
+.delete-expense-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Global body styling */
+.expense-tracker-body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #d5e4ff, #f3e6ff);
+}
+
+/* Container with centered content */
+.expense-container {
+  width: 80%; /* Adjusted width */
+  max-width: 1200px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  border: 2px solid #b0aaff;
+  overflow-x: auto; /* Allow horizontal scrolling for very small screens */
+}
+
+/* Title styling */
+.expense-heading {
+  text-align: center;
+  font-size: 2em;
+  color: #6d5eff;
+  margin-bottom: 30px;
+  font-weight: bold;
+}
+
+/* Input section styling */
+.expense-input-section {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+/* Label styling inside input section */
+.expense-input-section label {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+/* Input fields for number and date */
+.expense-input-section input[type="number"],
+.expense-input-section input[type="date"] {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+/* Button inside input section */
+.expense-input-section button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Expenses list styling */
+.expense-list {
+  margin: 20px;
+}
+
+/* Table styling */
+.expense-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Table header and cell styling */
+.expense-table th,
+.expense-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Table header specific style */
+.expense-table th {
+  background-color: #4CAF50;
+  color: white;
+}
+
+/* Footer styling for total */
+.expense-table tfoot td {
+  font-weight: bold;
+}
+
+/* Delete button styling */
+.delete-expense-btn {
+  padding: 5px 10px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+

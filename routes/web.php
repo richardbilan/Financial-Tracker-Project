@@ -17,5 +17,12 @@ Route::middleware('auth')->group(function () {
     Route::delete('/profile', [ProfileController::class, 'destroy'])->name('profile.destroy');
 });
 
+Route::middleware('auth')->group(function () {
+    Route::get('/expense-tracker', [ExpenseTrackerController::class, 'index'])->name('expenses.index');
+    Route::post('/expense-tracker', [ExpenseTrackerController::class, 'store'])->name('expenses.store');
+    Route::delete('/expense-tracker/{id}', [ExpenseTrackerController::class, 'destroy'])->name('expenses.destroy');
+});
+
+
 require __DIR__.'/auth.php';
 require __DIR__.'/admin-auth.php';

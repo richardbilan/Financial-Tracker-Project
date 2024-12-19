@@ -1,0 +1,52 @@
+<?php
+
+namespace App\Http\Controllers;
+
+use Illuminate\Http\Request;
+use App\Models\ExpenseTracker;
+use Illuminate\Support\Facades\Auth;
+
+class ExpenseTrackerController extends Controller
+{
+    // Display expenses for the logged-in user
+    public function index()
+{
+    // Fetch expenses for the logged-in user
+    $expenses = ExpenseTracker::where('user_id', Auth::id())->get();
+
+    // Pass expenses to the view
+    return view('dashboard', compact('expenses'));
+}
+
+    // Store a new expense
+    public function store(Request $request)
+    {
+        // Validate input
+        $request->validate([
+            'category' => 'required|string|max:255',
+            'amount' => 'required|numeric|min:0.01',
+            'date' => 'required|date',
+        ]);
+
+        // Save the expense for the authenticated user
+        ExpenseTracker::create([
+            'user_id' => Auth::id(),
+            'category' => $request->category,
+            'amount' => $request->amount,
+            'date' => $request->date,
+        ]);
+
+        // Redirect back with success message
+        return redirect()->route('expenses.index')->with('success', 'Expense added successfully!');
+    }
+
+    // Delete an expense
+    public function destroy($id)
+    {
+        // Find the expense belonging to the authenticated user and delete it
+        $expense = ExpenseTracker::where('id', $id)->where('user_id', Auth::id())->firstOrFail();
+        $expense->delete();
+
+        return redirect()->route('expenses.index')->with('success', 'Expense deleted successfully!');
+    }
+}
