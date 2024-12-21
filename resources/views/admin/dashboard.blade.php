@@ -59,6 +59,7 @@
         </div>
     </div>
 
+
     <div class="row">
         <!-- Expense Category Breakdown -->
         <div class="col-xl-6 col-lg-7">
@@ -85,6 +86,27 @@
         </div>
     </div>
 </div>
+
+
+     <!-- Print Section -->
+     <div class="row mt-4">
+        <div class="col-12">
+            <div id="printSection" class="p-3 border bg-light">
+                <h4>Financial Summary</h4>
+                <p><strong>Month & Year:</strong> {{ now()->format('F Y') }}</p>
+                <p><strong>Total Income:</strong> ₱{{ number_format($totalIncome, 2) }}</p>
+                <p><strong>Total Expense:</strong> ₱{{ number_format($totalExpense, 2) }}</p>
+                <p><strong>Profit:</strong> ₱{{ number_format($profit, 2) }}</p>
+            </div>
+            <button class="btn btn-primary mt-3" onclick="printSummary()">Print</button>
+        </div>
+    </div>
+</div>
+<br>
+<br>
+
+
+
 
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script>
@@ -113,5 +135,19 @@
             }]
         }
     });
+
+    function printSummary() {
+        const printContents = document.getElementById('printSection').innerHTML;
+        const originalContents = document.body.innerHTML;
+
+        // Create a printable view
+        document.body.innerHTML = printContents;
+        window.print();
+
+        // Revert back to the original contents
+        document.body.innerHTML = originalContents;
+        location.reload(); // Reload to restore JavaScript functionality
+    }
+
 </script>
 @endsection
