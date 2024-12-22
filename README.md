@@ -25,7 +25,7 @@ Go to the project directory
  - Copy .env.example file and paste it. Rename it to .env
  - Run the xampp and Open your browser and navigate to `http://localhost:8000`  and create a Database example: expense_app and copyt it paste it to DB_DATABASE=expense_app
 ![preview img](/preview8.png)
-
+![preview img](/preview10.png)
  - Go back to comandprompt
  - Run the following command to generate a key for the application
 
