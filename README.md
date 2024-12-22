@@ -1,4 +1,4 @@
-# Laravel 8 - Expense application
+# Financial Tracker Project
 
 ## Screenshots
 
