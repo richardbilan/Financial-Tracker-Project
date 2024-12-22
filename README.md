@@ -3,14 +3,16 @@
 ## Screenshots
 
 
-![preview img](/Expensecategory.png)
-![preview img](/Expenses-List.png)
-![preview img](/Financial-summary.png)
-![preview img](/Income-category.png)
-![preview img](/Income-List.png)
-![preview img](/Monthly-report.png)
-![preview img](/dashboard.png)
 ![preview img](/preview.png)
+![preview img](/preview2.png)
+![preview img](/preview3.png)
+![preview img](/preview4.png)
+![preview img](/preview5.png)
+![preview img](/preview6.png)
+![preview img](/preview7.png)
+![preview img](/preview8.png)
+![preview img](/preview9.png)
+
 ## Run Locally
 
 Clone the project
@@ -23,7 +25,7 @@ Go to the project directory
 
  - Copy .env.example file and paste it. Rename it to .env
  - Run the xampp and Open your browser and navigate to `http://localhost:8000`  and create a Database example: expense_app and copyt it paste it to DB_DATABASE=expense_app
- ![preview img](/Database.png)
+ ![preview img](/preview9.png)
 
  - Go back to comandprompt
  - Run the following command to generate a key for the application
