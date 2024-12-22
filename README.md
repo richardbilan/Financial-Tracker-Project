@@ -1,36 +1,40 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+# Laravel 8 - Expense application
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+## Screenshots
 
-PLEASEE READ THE INSTRUCTION BELOW!! 
+![preview img](/preview.png)
 
+![preview img](/preview2.png)
 
-## HOW TO CONNECT WITH DATABASES
--FIRST CLONE THE REPOSITORY 
-<br>
--COPY THE FILES IN "DATABASE USE"  
+## Run Locally
 
--OPEN XAMMP  
+Clone the project
 
--RUN THE DATABASE  
+```bash
+  git clone https://github.com/abdulaziz-m5u/laravel-expense-app.git project-name
+```
 
--GO TO FILES > WINDOWS (C) > XAMMP > MYSQL> DATA
+Go to the project directory
 
--AND PASTE IT    
+```bash
+  cd project-name
+```
 
--REPLACE FILE  
+-   Copy .env.example file to .env and edit database credentials there
 
--THEN GO TO PHPMYADMIN CHECK IF THE DATABASE IS IN THERE    
+```bash
+    composer install
+```
 
--go to cmd and locate your laravel file and inststall npm install after install npm run build    
+```bash
+    php artisan key:generate
+```
 
--THEN RUN THE LARAVEL FILE PHP ARTISAN SERVE
+```bash
+    php artisan migrate:fresh --seed
+```
 
+#### Login
 
-  
-if xammpp has unexpected error follow this https://youtu.be/yFVJwD2kkGM?si=9-PtrXbKFO9LjshN
+-   email = admin@example.com
+-   password = 123
