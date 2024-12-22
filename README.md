@@ -10,7 +10,7 @@
 ![preview img](/Income-List.png)
 ![preview img](/Monthly-report.png)
 ![preview img](/dashboard.png)
-
+![preview img](/preview.png)
 ## Run Locally
 
 Clone the project
