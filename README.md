@@ -2,9 +2,14 @@
 
 ## Screenshots
 
-![preview img](/preview.png)
 
-![preview img](/preview2.png)
+![preview img](/Expensecategory.png)
+![preview img](/Expenses-List.png)
+![preview img](/Financial-summary.png)
+![preview img](/Income-category.png)
+![preview img](/Income-List.png)
+![preview img](/Monthly-report.png)
+![preview img](/dashboard.png)
 
 ## Run Locally
 
@@ -16,14 +21,19 @@ Clone the project
 
 Go to the project directory
 
-```bash
-  cd project-name
-```
+ - Copy .env.example file and paste it. Rename it to .env
+ - Run the xampp and Open your browser and navigate to `http://localhost:8000`  and create a Database example: expense_app and copyt it paste it to DB_DATABASE=expense_app
+ ![preview img](/Database.png)
 
--   Copy .env.example file to .env and edit database credentials there
+ - Go back to comandprompt
+ - Run the following command to generate a key for the application
 
 ```bash
     composer install
+```
+
+```bash
+    composer update
 ```
 
 ```bash
@@ -34,7 +44,12 @@ Go to the project directory
     php artisan migrate:fresh --seed
 ```
 
-#### Login
+```bash
+    php artisan serve
+```
+
+#### For admin Login
+here's the default admin account.
 
 -   email = admin@example.com
 -   password = 123
