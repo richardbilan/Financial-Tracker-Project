@@ -5,13 +5,13 @@
 Register
 ![preview img](/preview.png)
 Enter your expenses
-![preview img](/preview6.png)
-Enter what kind of Income you have
-![preview img](/preview3.png)
-Enter the amount and the date you spend
 ![preview img](/preview7.png)
-Enter the amount of your incomes
+Enter what kind of Income you have
 ![preview img](/preview4.png)
+Enter the amount and the date you spend
+![preview img](/preview6.png)
+Enter the amount of your incomes
+![preview img](/preview3.png)
 You can track the expenses here
 ![preview img](/preview2.png)
 For Overviewing the expenses and total amount 
