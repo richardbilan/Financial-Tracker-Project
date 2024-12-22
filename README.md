@@ -2,15 +2,26 @@
 
 ## Screenshots
 
-
+Register
 ![preview img](/preview.png)
-![preview img](/preview2.png)
-![preview img](/preview3.png)
-![preview img](/preview4.png)
-![preview img](/preview5.png)
+Enter your expenses
 ![preview img](/preview6.png)
+Enter what kind of Income you have
+![preview img](/preview3.png)
+Enter the amount and the date you spend
 ![preview img](/preview7.png)
+Enter the amount of your incomes
+![preview img](/preview4.png)
+You can track the expenses here
+![preview img](/preview2.png)
+For Overviewing the expenses and total amount 
 ![preview img](/preview9.png)
+Print the expenses
+![preview img](/preview5.png)
+
+
+
+
 
 ## Run Locally
 
